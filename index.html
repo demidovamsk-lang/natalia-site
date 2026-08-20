@@ -335,6 +335,9 @@ nav[data-theme="dark"] .nv-cta:hover{background:var(--gold-lt);color:var(--black
 .svc-prices span{color:var(--mid)}
 .svc-prices b{font-weight:700;font-size:15px;color:var(--gold-dp);white-space:nowrap;letter-spacing:-.01em}
 .svc-note{font-size:12px;font-style:italic;color:var(--mid);margin-top:8px}
+.svc-photos{display:flex;gap:10px;max-width:300px}
+.svc-photo{flex:1;aspect-ratio:4/5;border-radius:16px;overflow:hidden;box-shadow:0 16px 32px -20px rgba(0,0,0,.3)}
+.svc-photo img{width:100%;height:100%;object-fit:cover;display:block}
 @media(max-width:880px){.svc-row{grid-template-columns:1fr}.svc-prices{margin-top:4px}}
 .svc-visual{grid-column:1/-1;margin-top:6px}
 .ba-slider{
@@ -918,6 +921,12 @@ nav[data-theme="dark"] .nv-cta:hover{background:var(--gold-lt);color:var(--black
             </div>
             <p class="svc-desc">Прикорневой объём без ежедневной укладки феном — волосы дольше выглядят пышными и живыми. Не подходит при недавних химических процедурах — уточню на диагностике.</p>
             <div class="svc-prices"><div><span>В зависимости от густоты</span><b>3 500–5 000 ₽</b></div></div>
+            <div class="svc-visual">
+              <div class="svc-photos">
+                <div class="svc-photo"><img src="images/pumping-1.jpg" alt="Результат пампинга, фото 1" loading="lazy" decoding="async"></div>
+                <div class="svc-photo"><img src="images/pumping-2.jpg" alt="Результат пампинга, фото 2" loading="lazy" decoding="async"></div>
+              </div>
+            </div>
           </div>
         </div>
 
