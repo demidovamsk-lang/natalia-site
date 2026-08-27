@@ -371,9 +371,16 @@ nav[data-theme="dark"] .nv-cta:hover{background:var(--gold-lt);color:var(--black
 .ba-gallery-track .ba-slider{flex:0 0 100%;max-width:100%;scroll-snap-align:start}
 .ba-gallery{max-width:300px}
 .ba-case-label{font-size:11px;color:var(--mid);margin-bottom:8px}
-.ba-dots{display:flex;gap:6px;margin-top:10px}
-.ba-dot{width:6px;height:6px;border-radius:50%;background:var(--line-2);border:none;padding:0;cursor:pointer;transition:background .25s,transform .25s}
-.ba-dot.on{background:var(--gold);transform:scale(1.3)}
+.ba-nav{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:14px}
+.ba-nav-btn{
+  width:34px;height:34px;flex:0 0 auto;border-radius:50%;border:1px solid var(--line-2);background:#fff;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--ink);
+  transition:background .2s,border-color .2s,transform .2s;
+}
+.ba-nav-btn svg{width:16px;height:16px}
+.ba-nav-btn:hover{background:var(--cream);border-color:var(--gold);transform:scale(1.08)}
+.ba-nav-count{font-size:13px;color:var(--mid);min-width:44px;text-align:center;font-variant-numeric:tabular-nums}
+.ba-nav-count b{color:var(--ink);font-weight:600}
 .svc-gift{
   margin-top:44px;padding:30px 34px;border-radius:20px;color:var(--ink-2);
   background:linear-gradient(155deg,#FBF7EF,var(--cream) 55%,#F2E9D8);
@@ -785,13 +792,78 @@ nav[data-theme="dark"] .nv-cta:hover{background:var(--gold-lt);color:var(--black
             </div>
             <div class="svc-note">+ доплата за густоту волос — 1 000–3 000 ₽</div>
             <div class="svc-visual">
-              <div class="ba-slider" data-ba>
-                <img class="ba-img" src="images/keratin-after.jpg" alt="После кератинового выпрямления" loading="lazy" decoding="async">
-                <div class="ba-before-wrap"><img class="ba-img" src="images/keratin-before.jpg" alt="До кератинового выпрямления" loading="lazy" decoding="async"></div>
-                <div class="ba-line"></div>
-                <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
-                <span class="ba-tag ba-tag-before">До</span>
-                <span class="ba-tag ba-tag-after">После</span>
+              <div class="ba-gallery">
+                <div class="ba-gallery-track">
+                  <div class="ba-slider" data-ba>
+                    <img class="ba-img" src="images/keratin-1-after.jpg" alt="После кератинового выпрямления, случай 1" loading="lazy" decoding="async">
+                    <div class="ba-before-wrap"><img class="ba-img" src="images/keratin-1-before.jpg" alt="До кератинового выпрямления, случай 1" loading="lazy" decoding="async"></div>
+                    <div class="ba-line"></div>
+                    <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+                    <span class="ba-tag ba-tag-before">До</span>
+                    <span class="ba-tag ba-tag-after">После</span>
+                  </div>
+                  <div class="ba-slider" data-ba>
+                    <img class="ba-img" src="images/keratin-2-after.jpg" alt="После кератинового выпрямления, случай 2" loading="lazy" decoding="async">
+                    <div class="ba-before-wrap"><img class="ba-img" src="images/keratin-2-before.jpg" alt="До кератинового выпрямления, случай 2" loading="lazy" decoding="async"></div>
+                    <div class="ba-line"></div>
+                    <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+                    <span class="ba-tag ba-tag-before">До</span>
+                    <span class="ba-tag ba-tag-after">После</span>
+                  </div>
+                  <div class="ba-slider" data-ba>
+                    <img class="ba-img" src="images/keratin-3-after.jpg" alt="После кератинового выпрямления, случай 3" loading="lazy" decoding="async">
+                    <div class="ba-before-wrap"><img class="ba-img" src="images/keratin-3-before.jpg" alt="До кератинового выпрямления, случай 3" loading="lazy" decoding="async"></div>
+                    <div class="ba-line"></div>
+                    <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+                    <span class="ba-tag ba-tag-before">До</span>
+                    <span class="ba-tag ba-tag-after">После</span>
+                  </div>
+                  <div class="ba-slider" data-ba>
+                    <img class="ba-img" src="images/keratin-4-after.jpg" alt="После кератинового выпрямления, случай 4" loading="lazy" decoding="async">
+                    <div class="ba-before-wrap"><img class="ba-img" src="images/keratin-4-before.jpg" alt="До кератинового выпрямления, случай 4" loading="lazy" decoding="async"></div>
+                    <div class="ba-line"></div>
+                    <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+                    <span class="ba-tag ba-tag-before">До</span>
+                    <span class="ba-tag ba-tag-after">После</span>
+                  </div>
+                  <div class="ba-slider" data-ba>
+                    <img class="ba-img" src="images/keratin-5-after.jpg" alt="После кератинового выпрямления, случай 5" loading="lazy" decoding="async">
+                    <div class="ba-before-wrap"><img class="ba-img" src="images/keratin-5-before.jpg" alt="До кератинового выпрямления, случай 5" loading="lazy" decoding="async"></div>
+                    <div class="ba-line"></div>
+                    <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+                    <span class="ba-tag ba-tag-before">До</span>
+                    <span class="ba-tag ba-tag-after">После</span>
+                  </div>
+                  <div class="ba-slider" data-ba>
+                    <img class="ba-img" src="images/keratin-6-after.jpg" alt="После кератинового выпрямления, случай 6" loading="lazy" decoding="async">
+                    <div class="ba-before-wrap"><img class="ba-img" src="images/keratin-6-before.jpg" alt="До кератинового выпрямления, случай 6" loading="lazy" decoding="async"></div>
+                    <div class="ba-line"></div>
+                    <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+                    <span class="ba-tag ba-tag-before">До</span>
+                    <span class="ba-tag ba-tag-after">После</span>
+                  </div>
+                  <div class="ba-slider" data-ba>
+                    <img class="ba-img" src="images/keratin-7-after.jpg" alt="После кератинового выпрямления, случай 7" loading="lazy" decoding="async">
+                    <div class="ba-before-wrap"><img class="ba-img" src="images/keratin-7-before.jpg" alt="До кератинового выпрямления, случай 7" loading="lazy" decoding="async"></div>
+                    <div class="ba-line"></div>
+                    <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+                    <span class="ba-tag ba-tag-before">До</span>
+                    <span class="ba-tag ba-tag-after">После</span>
+                  </div>
+                  <div class="ba-slider" data-ba>
+                    <img class="ba-img" src="images/keratin-8-after.jpg" alt="После кератинового выпрямления, случай 8" loading="lazy" decoding="async">
+                    <div class="ba-before-wrap"><img class="ba-img" src="images/keratin-8-before.jpg" alt="До кератинового выпрямления, случай 8" loading="lazy" decoding="async"></div>
+                    <div class="ba-line"></div>
+                    <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+                    <span class="ba-tag ba-tag-before">До</span>
+                    <span class="ba-tag ba-tag-after">После</span>
+                  </div>
+                </div>
+                <div class="ba-nav">
+                  <button class="ba-nav-btn ba-prev" aria-label="Предыдущий кейс"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+                  <span class="ba-nav-count"><b>1</b> / 8</span>
+                  <button class="ba-nav-btn ba-next" aria-label="Следующий кейс"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+                </div>
               </div>
             </div>
           </div>
@@ -836,11 +908,35 @@ nav[data-theme="dark"] .nv-cta:hover{background:var(--gold-lt);color:var(--black
                     <span class="ba-tag ba-tag-before">До</span>
                     <span class="ba-tag ba-tag-after">После</span>
                   </div>
+                  <div class="ba-slider" data-ba>
+                    <img class="ba-img" src="images/cold-4-after.jpg" alt="После холодного восстановления, случай 4" loading="lazy" decoding="async">
+                    <div class="ba-before-wrap"><img class="ba-img" src="images/cold-4-before.jpg" alt="До холодного восстановления, случай 4" loading="lazy" decoding="async"></div>
+                    <div class="ba-line"></div>
+                    <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+                    <span class="ba-tag ba-tag-before">До</span>
+                    <span class="ba-tag ba-tag-after">После</span>
+                  </div>
+                  <div class="ba-slider" data-ba>
+                    <img class="ba-img" src="images/cold-5-after.jpg" alt="После холодного восстановления, случай 5" loading="lazy" decoding="async">
+                    <div class="ba-before-wrap"><img class="ba-img" src="images/cold-5-before.jpg" alt="До холодного восстановления, случай 5" loading="lazy" decoding="async"></div>
+                    <div class="ba-line"></div>
+                    <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+                    <span class="ba-tag ba-tag-before">До</span>
+                    <span class="ba-tag ba-tag-after">После</span>
+                  </div>
+                  <div class="ba-slider" data-ba>
+                    <img class="ba-img" src="images/cold-6-after.jpg" alt="После холодного восстановления, случай 6" loading="lazy" decoding="async">
+                    <div class="ba-before-wrap"><img class="ba-img" src="images/cold-6-before.jpg" alt="До холодного восстановления, случай 6" loading="lazy" decoding="async"></div>
+                    <div class="ba-line"></div>
+                    <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+                    <span class="ba-tag ba-tag-before">До</span>
+                    <span class="ba-tag ba-tag-after">После</span>
+                  </div>
                 </div>
-                <div class="ba-dots">
-                  <button class="ba-dot on" aria-label="Случай 1"></button>
-                  <button class="ba-dot" aria-label="Случай 2"></button>
-                  <button class="ba-dot" aria-label="Случай 3"></button>
+                <div class="ba-nav">
+                  <button class="ba-nav-btn ba-prev" aria-label="Предыдущий кейс"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+                  <span class="ba-nav-count"><b>1</b> / 6</span>
+                  <button class="ba-nav-btn ba-next" aria-label="Следующий кейс"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
                 </div>
               </div>
             </div>
@@ -887,11 +983,19 @@ nav[data-theme="dark"] .nv-cta:hover{background:var(--gold-lt);color:var(--black
                     <span class="ba-tag ba-tag-before">До</span>
                     <span class="ba-tag ba-tag-after">После</span>
                   </div>
+                  <div class="ba-slider" data-ba>
+                    <img class="ba-img" src="images/botox-4-after.jpg" alt="После ботокса для волос, случай 4" loading="lazy" decoding="async">
+                    <div class="ba-before-wrap"><img class="ba-img" src="images/botox-4-before.jpg" alt="До ботокса для волос, случай 4" loading="lazy" decoding="async"></div>
+                    <div class="ba-line"></div>
+                    <div class="ba-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+                    <span class="ba-tag ba-tag-before">До</span>
+                    <span class="ba-tag ba-tag-after">После</span>
+                  </div>
                 </div>
-                <div class="ba-dots">
-                  <button class="ba-dot on" aria-label="Случай 1"></button>
-                  <button class="ba-dot" aria-label="Случай 2"></button>
-                  <button class="ba-dot" aria-label="Случай 3"></button>
+                <div class="ba-nav">
+                  <button class="ba-nav-btn ba-prev" aria-label="Предыдущий кейс"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+                  <span class="ba-nav-count"><b>1</b> / 4</span>
+                  <button class="ba-nav-btn ba-next" aria-label="Следующий кейс"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
                 </div>
               </div>
             </div>
@@ -1263,20 +1367,35 @@ setupFocusTrack('voicesTrack','.voices-sec',{minScale:.9,maxScale:1.05,minOpacit
   });
 })();
 
-/* Multi-case before/after gallery — dots + scroll sync */
+/* Multi-case before/after gallery — arrow nav + scroll sync */
 (function(){
   document.querySelectorAll('.ba-gallery').forEach(gallery=>{
     const track = gallery.querySelector('.ba-gallery-track');
-    const dots = Array.from(gallery.querySelectorAll('.ba-dot'));
-    if(!track || !dots.length) return;
-    dots.forEach((dot,i)=>{
-      dot.addEventListener('click', ()=>{
-        track.scrollTo({left: track.clientWidth*i, behavior:'smooth'});
-      });
-    });
+    const slides = track ? Array.from(track.children) : [];
+    const total = slides.length;
+    if(!track || total < 2) return;
+    const prevBtn = gallery.querySelector('.ba-prev');
+    const nextBtn = gallery.querySelector('.ba-next');
+    const countEl = gallery.querySelector('.ba-nav-count b');
+    let current = 0;
+    let scrollTimer = null;
+    let programmatic = false;
+    function goTo(i){
+      const wrapping = i < 0 || i >= total;
+      current = (i + total) % total;
+      programmatic = true;
+      track.scrollTo({left: track.clientWidth*current, behavior: wrapping ? 'auto' : 'smooth'});
+      if(countEl) countEl.textContent = current+1;
+    }
+    if(prevBtn) prevBtn.addEventListener('click', ()=>goTo(current-1));
+    if(nextBtn) nextBtn.addEventListener('click', ()=>goTo(current+1));
     track.addEventListener('scroll', ()=>{
-      const i = Math.round(track.scrollLeft / track.clientWidth);
-      dots.forEach((d,j)=> d.classList.toggle('on', j===i));
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(()=>{
+        if(programmatic){ programmatic = false; return; }
+        current = Math.round(track.scrollLeft / track.clientWidth);
+        if(countEl) countEl.textContent = current+1;
+      }, 120);
     });
   });
 })();
