@@ -141,6 +141,11 @@ em{font-style:italic;font-family:var(--serif);color:var(--gold);font-weight:400}
 .rv.v{opacity:1;transform:none}
 .rv-d1{transition-delay:.08s}.rv-d2{transition-delay:.16s}.rv-d3{transition-delay:.24s}.rv-d4{transition-delay:.32s}.rv-d5{transition-delay:.4s}
 
+@media (prefers-reduced-motion: reduce){
+  .rv{opacity:1!important;transform:none!important;transition:none!important}
+  .btn-glow,.cta-ch-primary,.svc-gift::before,.svc-gift-spark,.svc-gift-ico::after,.svc-gift-ico svg,.hero-scroll::after{animation:none!important}
+}
+
 /* ═══════════════════════ NAV ═══════════════════════ */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:900;
@@ -657,7 +662,7 @@ nav[data-theme="dark"] .nv-cta:hover{background:var(--gold-lt);color:var(--black
   <section class="stack-item hero" id="hero" data-theme="dark" style="z-index:1">
     <div class="stack-pin">
       <div class="hero-media">
-        <video autoplay muted loop playsinline preload="auto" poster="images/hero-poster.jpg">
+        <video autoplay muted loop playsinline preload="metadata" poster="images/hero-poster.jpg">
           <source src="video/hair-restoration-scrub.mp4" type="video/mp4" media="(min-width:761px)">
           <source src="video/hair-restoration-mobile.mp4" type="video/mp4">
         </video>
@@ -1123,10 +1128,6 @@ nav[data-theme="dark"] .nv-cta:hover{background:var(--gold-lt);color:var(--black
             <div class="faq-a"><p>Да. Специально подобранные составы безопасны в период беременности и кормления — работаю с этой аудиторией регулярно.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-q">Как добраться?<span class="faq-i">+</span></button>
-            <div class="faq-a"><p>Студия расположена в удобной для города локации — рядом парковка для тех, кто приезжает на машине, и хорошая транспортная развязка для общественного транспорта. Точный адрес и ориентиры пришлю при записи.</p></div>
-          </div>
-          <div class="faq-item">
             <button class="faq-q">Кому нельзя делать пампинг?<span class="faq-i">+</span></button>
             <div class="faq-a"><p>Есть противопоказания: аллергия на химические составы, тотальное осветление с корнями короче 4&nbsp;см, кератин или ботокс менее 1,5 месяцев назад, активные кожные заболевания головы. Уточняю всё на диагностике — так волосы возьмут завиток ровно.</p></div>
           </div>
@@ -1137,6 +1138,10 @@ nav[data-theme="dark"] .nv-cta:hover{background:var(--gold-lt);color:var(--black
           <div class="faq-item">
             <button class="faq-q">Что делать, когда объём отрастёт?<span class="faq-i">+</span></button>
             <div class="faq-a"><p>Через 3–6 месяцев можно сделать коррекцию — уберу старый объём и накручу новый за один визит. Если продолжать не хотите, а волосы сами не распрямились — сделаю анти-химию, она безопасно вернёт гладкость.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Как добраться?<span class="faq-i">+</span></button>
+            <div class="faq-a"><p>Студия расположена в удобной для города локации — рядом парковка для тех, кто приезжает на машине, и хорошая транспортная развязка для общественного транспорта. Точный адрес и ориентиры пришлю при записи.</p></div>
           </div>
         </div>
       </div>
