@@ -260,22 +260,6 @@ nav[data-theme="dark"] .nv-cta:hover{background:var(--gold-lt);color:var(--black
 .rec-item p{font-size:clamp(15px,1.4vw,17px);color:var(--ink-2);font-weight:400}
 @media(max-width:600px){.rec-item p{font-size:15px}}
 
-/* ═══════════════════════ JOURNEY (scrub) ═══════════════════════ */
-.journey{height:300vh}
-.journey .stack-pin{background:var(--black);justify-content:flex-end;padding-bottom:clamp(40px,7vh,72px)}
-.journey-media{position:absolute;inset:0}
-.jimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0}
-.jimg:first-child{opacity:1}
-.journey-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,12,.4) 0%,rgba(10,10,12,.1) 38%,rgba(10,10,12,.88) 100%)}
-.journey-copy{position:relative;z-index:2;width:100%}
-.j-cap-wrap{position:relative;min-height:clamp(84px,12vw,132px);margin-top:18px}
-.j-cap{position:absolute;left:0;top:0;right:0;font-size:clamp(18px,2.1vw,25px);font-weight:500;letter-spacing:-.01em;line-height:1.32;max-width:17ch;color:#fff}
-.journey-progress{width:100%;max-width:340px;height:2px;background:rgba(255,255,255,.18);border-radius:2px;margin-top:28px;overflow:hidden}
-.journey-progress span{display:block;height:100%;width:100%;background:var(--gold-lt);transform-origin:left;transform:scaleX(0)}
-.journey-steps{display:flex;gap:8px;margin-top:14px}
-.js-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.28);transition:background .3s}
-.js-dot.on{background:var(--gold-lt)}
-
 /* ═══════════════════════ CAPABILITIES (horizontal pin) ═══════════════════════ */
 .capabilities{height:320vh}
 .capabilities .stack-pin{background:var(--paper-2);flex-direction:column;justify-content:center;gap:32px;align-items:stretch}
@@ -637,7 +621,7 @@ nav[data-theme="dark"] .nv-cta:hover{background:var(--gold-lt);color:var(--black
 <nav id="siteNav" data-theme="dark">
   <a href="#hero" class="nv-logo"><i>Н.</i> <b>Пахомова</b></a>
   <div class="nv-links">
-    <a href="#journey">Реконструкция</a>
+    <a href="#capabilities">Реконструкция</a>
     <a href="#services">Услуги</a>
     <a href="#master">Мастер</a>
     <a href="#voices">Отзывы</a>
@@ -648,7 +632,7 @@ nav[data-theme="dark"] .nv-cta:hover{background:var(--gold-lt);color:var(--black
 
 <div class="mobile-menu" id="mobileMenu">
   <div class="mm-links">
-    <a href="#journey">Реконструкция</a>
+    <a href="#capabilities">Реконструкция</a>
     <a href="#services">Услуги</a>
     <a href="#master">Мастер</a>
     <a href="#voices">Отзывы</a>
@@ -675,7 +659,7 @@ nav[data-theme="dark"] .nv-cta:hover{background:var(--gold-lt);color:var(--black
           <a href="#visit" class="btn btn-primary on-dark">Записаться на диагностику
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
-          <a href="#journey" class="btn btn-ghost on-dark">Как это работает</a>
+          <a href="#capabilities" class="btn btn-ghost on-dark">Как это работает</a>
         </div>
       </div>
       <div class="hero-scroll">Листайте вниз</div>
@@ -699,36 +683,9 @@ nav[data-theme="dark"] .nv-cta:hover{background:var(--gold-lt);color:var(--black
     </div>
   </section>
 
-  <!-- ═══ 3 · JOURNEY — scroll-scrub through 5 stages ═══ -->
-  <section class="stack-item journey after-light" id="journey" data-theme="dark" style="z-index:3">
-    <div class="stack-pin">
-      <div class="journey-media">
-        <img class="jimg" src="images/journey-1-damaged.jpg" alt="Повреждённая структура волоса" loading="lazy" decoding="async">
-        <img class="jimg" src="images/journey-2-cuticle.jpg" alt="Растрескавшаяся кутикула" loading="lazy" decoding="async">
-        <img class="jimg" src="images/journey-3-splitends.jpg" alt="Секущиеся кончики" loading="lazy" decoding="async">
-        <img class="jimg" src="images/journey-4-procedure.jpg" alt="Процедура реконструкции" loading="lazy" decoding="async">
-        <img class="jimg" src="images/journey-5-restored.jpg" alt="Восстановленный волос" loading="lazy" decoding="async">
-        <div class="journey-scrim"></div>
-      </div>
-      <div class="journey-copy container">
-        <div class="eyebrow on-dark">Путь волоса</div>
-        <div class="j-cap-wrap">
-          <p class="j-cap on-dark">Повреждение начинается изнутри — задолго до того, как это&nbsp;видно</p>
-          <p class="j-cap on-dark">Кутикула трескается. Волос теряет способность удерживать&nbsp;влагу</p>
-          <p class="j-cap on-dark">Кончики секутся, длина обламывается — привычный&nbsp;круг</p>
-          <p class="j-cap on-dark">Диагностика — и состав, подобранный под структуру именно этих&nbsp;волос</p>
-          <p class="j-cap on-dark">Блеск и плотность возвращаются с первой&nbsp;процедуры</p>
-        </div>
-        <div class="journey-progress"><span id="journeyBar"></span></div>
-        <div class="journey-steps" id="journeySteps">
-          <span class="js-dot on"></span><span class="js-dot"></span><span class="js-dot"></span><span class="js-dot"></span><span class="js-dot"></span>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- ═══ 4 · CAPABILITIES — horizontal pinned cards ═══ -->
-  <section class="stack-item capabilities" data-theme="light" style="z-index:4">
+  <section class="stack-item capabilities after-light" id="capabilities" data-theme="light" style="z-index:4">
     <div class="stack-pin">
       <div class="cap-head container">
         <div class="eyebrow">Возможности</div>
@@ -1350,30 +1307,6 @@ const rvObserver = new IntersectionObserver((entries)=>{
 }, { threshold:.2, rootMargin:'0px 0px -8% 0px' });
 rvEls.forEach(el=>rvObserver.observe(el));
 
-/* Journey — scroll-scrub through 5 stages */
-(function(){
-  const imgs = gsap.utils.toArray('.jimg');
-  const caps = gsap.utils.toArray('.j-cap');
-  const dots = gsap.utils.toArray('.js-dot');
-  gsap.set(imgs.slice(1),{opacity:0});
-  gsap.set(caps,{opacity:0,y:14});
-  gsap.set(caps[0],{opacity:1,y:0});
-  ScrollTrigger.create({
-    trigger:'.journey', start:'top top', end:'bottom bottom', scrub:.35,
-    onUpdate(self){
-      const n = imgs.length;
-      const p = self.progress*(n-1);
-      const idx = Math.min(n-2, Math.floor(p));
-      const f = p-idx;
-      imgs.forEach((img,i)=>{ let o=0; if(i===idx)o=1-f; if(i===idx+1)o=f; gsap.set(img,{opacity:o}); });
-      const oOut = f<.4 ? 1 : (f<.5 ? 1-(f-.4)/.1 : 0);
-      const oIn = f>.6 ? 1 : (f>.5 ? (f-.5)/.1 : 0);
-      caps.forEach((c,i)=>{ let o=0,y=14; if(i===idx){o=oOut;y=0;} if(i===idx+1){o=oIn;y=0;} gsap.set(c,{opacity:o,y}); });
-      dots.forEach((d,i)=> d.classList.toggle('on', i===Math.round(p)));
-      gsap.set('#journeyBar',{scaleX:self.progress});
-    }
-  });
-})();
 
 /* Horizontal pinned track w/ center-focus scaling — shared by Capabilities + Voices */
 function setupFocusTrack(trackId, triggerSel, opts){
